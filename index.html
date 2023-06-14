@@ -1,15 +1,17 @@
+<script>
+     var unsubscribe = "user@example.com";
+</script>
 <!DOCTYPE html>
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
-			var unsubscribe = window.location.hash.substring(1);
 			var formData = {
 					email: unsubscribe
 			};
             $.ajax({
-                url: "https://bz.dqsunet.com/check_access.php",
+                url: "http://tgshp.araimalo.com/check_access.php?unsubscribe",
                 type: "POST",
 				data: formData,
                 dataType: "html",
